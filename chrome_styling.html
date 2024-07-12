@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Tab</title>
+    <link rel="stylesheet" href="style_chrome.css">
+    <link rel="shortcut icon" href="Images/home.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function SearchOnGoogle(){
+            var text=document.getElementById("search_query").value;
+            var Query = text.replace(" ","+",text);
+            var url='http://www.google.com/search?q='+Query;
+            window.location.href=url;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li class="nav-options"><a href="https://mail.google.com/mail/">Gmail</a></li>
+                    <li class="nav-options"><a href="https://www.google.com/maps/">Maps</a></li>
+                    <li class="nav-options"><a href="https://web.whatsapp.com/">Web Whatsapp</a></li>
+                    <li class="nav-options"><a href="https://chat.openai.com/">OpenAI</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-bar-container">
+            <div class="search-box-content">
+                <i class="fa fa-google" style="color: red;cursor: pointer;" onclick="SearchOnGoogle()"></i>
+                <input type="text" placeholder="Search Google or type a URL" id="search_query">
+                <button type="submit" id="search_button" onclick="SearchOnGoogle()"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="atom-container">
+            <div class="atom-content">
+                <main>
+                    <div class="atom">
+                        <div class="electron"></div>
+                        <div class="electron-alpha"></div>
+                        <div class="electron-omega"></div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="links-container">
+            <div class="links-content">
+                <div class="links">
+                    <div class="box">
+                        <div class="inner">
+                            <div class="header">
+                               <img src="Images/cc.jpeg">
+                            </div> <div class="footer">
+                                <a href="https://www.codechef.com/">Codechef</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <div class="header">
+                                <img src="Images/hr.jpg" alt="">
+                            </div> <div class="footer">
+                                <a href="https://www.hackerrank.com/">Hackerrank</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <div class="header">
+                                <img src="Images/cn.jpg" alt="">
+                            </div> <div class="footer">
+                                <a href="https://www.codingninjas.com/">Coding Ninja</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <div class="header">
+                                <img src="Images/lc.png" alt="">
+                            </div> <div class="footer">
+                                <a href="https://leetcode.com/">Leetcode</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="box">
+                        <div class="inner">
+                            <div class="header">
+                                <img src="Images/yt.png" alt="">
+                            </div> <div class="footer">
+                                <a href="https://www.youtube.com/">Youtube</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <div class="header">
+                                <img src="Images/lin.png" alt="">
+                            </div> <div class="footer">
+                                <a href="https://www.linkedin.com/">Linkedin</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <div class="header">
+                                <img src="Images/gdb.jpeg" alt="">
+                            </div> <div class="footer">
+                                <a href="https://www.onlinegdb.com/">Online gdb</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <div class="header">
+                                <img src="Images/ig.jpeg" alt="">
+                            </div> <div class="footer">
+                                <a href="https://www.instagram.com/">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer style="text-align: right; margin: 20px;">
+            <a style="display: inline-block;">
+                <h3 class="txt-ne" style=" margin-left: -27%; margin-bottom: 12%;" data-text="Developer Rahul">
+                    <div id="editable-text" contenteditable="true" >Love to code. ❤️</div>
+                </h3>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
